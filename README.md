@@ -83,6 +83,11 @@ def clean(review: str) -> str:
 * dropout rate (classifier): 0.3
 * label smoothing: 0.1
 ***
+## Tried Techniques
+* back-translation
+* data-augmentation (random swap)
+* spell / spacing correction
+***
 ## Reference
 [kykim/electra-kor-base](https://github.com/kiyoungkim1/LMkor)
 ```
