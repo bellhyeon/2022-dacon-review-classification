@@ -1,3 +1,4 @@
+from genericpath import exists
 import json
 import random
 import shutil
@@ -323,6 +324,7 @@ if __name__ == "__main__":
     seed_everything(args["seed"])
 
     if not os.path.exists(args["save_path"]):
+        os.mkdir("./models")
         os.mkdir(args["save_path"])
 
     num_folder = len(glob(args["save_path"] + "*"))
