@@ -72,6 +72,8 @@ def clean(review: str) -> str:
     return review
 ```
 ### 2. Training Details
+* backbone: kykim/electra-kor-base
+* 5 fold(stratified)
 * lr: 1e-5
 * epochs: 10
 * batch size: 32
@@ -79,8 +81,7 @@ def clean(review: str) -> str:
 * optimizer: AdamW
 * scheduler: cosine schedule with warmup
 * dropout rate (classifier): 0.3
-* Label Smoothing: 0.1
-
+* label smoothing: 0.1
 ***
 ## Reference
 [kykim/electra-kor-base](https://github.com/kiyoungkim1/LMkor)
